@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
+
+.navbar {
+  font-family: "Nunito sans", sans-serif;
+  background-color: black;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  margin-left: 15px;
+}
+
+.navbar-nav .nav-link {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 15px;
+  &:hover {
+    filter: brightness(85%);
+    text-decoration: underline;
+  }
+  &:active {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}
+
+.navbar-toggler-icon {
+  background-color: black;
+}
