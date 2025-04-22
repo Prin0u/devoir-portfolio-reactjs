@@ -8,7 +8,6 @@ function Footer() {
     <footer className="bg-dark text-white py-4 mt-auto flex-grow-1">
       <div className="container">
         <div className="row justify-content-center text-md-start text-center">
-          {/* Colonne 1 */}
           <div className="col-12 col-md-4 mb-4 mb-md-0">
             <h5>John Doe</h5>
             <address>
@@ -45,8 +44,6 @@ function Footer() {
               </a>
             </div>
           </div>
-
-          {/* Colonne 2 */}
           <div className="col-12 col-md-4 mb-4 mb-md-0">
             <h5>Liens utiles</h5>
             <ul className="list-unstyled">
@@ -77,8 +74,6 @@ function Footer() {
               </li>
             </ul>
           </div>
-
-          {/* Colonne 3 */}
           <div className="col-12 col-md-4">
             <h5>Mes dernières réalisations</h5>
             <ul className="list-unstyled">
