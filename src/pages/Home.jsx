@@ -1,5 +1,6 @@
 import React from "react";
 import "../components/css/Home.scss";
+import Separator from "../components/Separator";
 
 function Home() {
   return (
@@ -26,7 +27,7 @@ function Home() {
         <div className="row contenu-partie-basse">
           <div className="col-md-6 partie-gauche px-4">
             <h2>A propos</h2>
-            <hr className="separation-bleue" />
+            <Separator />
             <img
               src="/images/john-doe-about.jpg"
               alt="Portrait de John Doe"
@@ -53,7 +54,7 @@ function Home() {
           </div>
           <div className="col-md-6 partie-droite px-4">
             <h2>Mes compétences</h2>
-            <hr className="separation-bleue" />
+            <Separator />
             <div className="competence-bar">
               <div className="competence-item">
                 <label>HTML5 90%</label>

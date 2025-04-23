@@ -1,5 +1,6 @@
 import React from "react";
 import "../components/css/Services.scss";
+import Separator from "../components/Separator";
 
 function Services() {
   return (
@@ -11,10 +12,10 @@ function Services() {
           className="img-fluid"
         />
         <h1 className="title text-center mt-5">Mon offre de services</h1>
-        <p className="text-center">
+        <p className="text-center mb-4">
           Voici les prestations sur lesquelles je peux intervenir
         </p>
-        <hr className="mx-auto separation-bleue" />
+        <Separator margin="auto" width="450px" />
       </section>
 
       <section>
@@ -24,7 +25,11 @@ function Services() {
               <div className="services service-box text-center">
                 <i
                   className="bi bi-brush"
-                  style={{ fontSize: "2rem", color: "#007bff" }}
+                  style={{
+                    fontSize: "2rem",
+                    color: "#007bff",
+                    marginBottom: "20px",
+                  }}
                 ></i>
                 <h3 className="title">UX Design</h3>
                 <p>
@@ -40,7 +45,11 @@ function Services() {
               <div className="services service-box text-center">
                 <i
                   className="bi bi-code-slash"
-                  style={{ fontSize: "2rem", color: "#007bff" }}
+                  style={{
+                    fontSize: "2rem",
+                    color: "#007bff",
+                    marginBottom: "20px",
+                  }}
                 ></i>
 
                 <h3 className="title">Développement web</h3>
@@ -56,7 +65,11 @@ function Services() {
               <div className="services service-box text-center">
                 <i
                   className="bi bi-search"
-                  style={{ fontSize: "2rem", color: "#007bff" }}
+                  style={{
+                    fontSize: "2rem",
+                    color: "#007bff",
+                    marginBottom: "20px",
+                  }}
                 />
                 <h3 className="title">Référencement</h3>
                 <p>

@@ -1,17 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
 
-.separation-bleue {
-  border: none;
-  height: 5px;
-  width: 30%;
-  background-color: #007bff;
-  opacity: 1;
-  margin: 1rem 0 2rem 0;
-}
+// .separation-bleue {
+//   border: none;
+//   height: 5px;
+//   width: 100%;
+//   background-color: #007bff;
+//   opacity: 1;
+//   margin: 1rem 0 2rem 0;
+// }
 
 .title {
   font-family: "Nunito Sans" sans-serif;
   font-weight: 600;
+}
+.separator {
+  margin-top: 2rem;
 }
 .services {
   display: flex;
@@ -21,10 +24,10 @@
 }
 .service-box {
   display: flex;
-  flex-direction: column; /* Pour que le contenu s'étale verticalement */
-  justify-content: space-between; /* Aligne les éléments de façon uniforme */
+  flex-direction: column;
+  justify-content: space-between;
   padding: 20px;
-  height: 90%; /* S'assure que la boîte prend toute la hauteur disponible */
+  height: 90%;
   font-size: 0.9rem;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
