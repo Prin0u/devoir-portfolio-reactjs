@@ -15,7 +15,7 @@ function Services() {
         <p className="text-center mb-4">
           Voici les prestations sur lesquelles je peux intervenir
         </p>
-        <Separator margin="auto" width="450px" />
+        <Separator variant="services" />
       </section>
 
       <section>

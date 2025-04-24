@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
+@media (max-width: 768px) {
+  .separator--home {
+    width: 100%;
+  }
+}
+.separator--home {
+  background-color: #1a72ff;
+  opacity: 1;
+  height: 5px;
+  border: none;
+}
 .partie-haute {
   display: flex;
   flex-direction: column;
@@ -54,14 +65,7 @@ h1 {
   width: 100%;
   max-width: 1000px;
 }
-// .separation-bleue {
-//   border: none;
-//   height: 3px;
-//   width: 100%;
-//   background-color: #007bff;
-//   opacity: 1;
-//   margin: 1rem 0 2rem 0;
-// }
+
 .partie-gauche {
   font-size: 0.7rem;
 }

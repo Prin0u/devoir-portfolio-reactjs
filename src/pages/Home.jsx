@@ -27,11 +27,11 @@ function Home() {
         <div className="row contenu-partie-basse">
           <div className="col-md-6 partie-gauche px-4">
             <h2>A propos</h2>
-            <Separator />
+            <Separator variant="home" />
             <img
               src="/images/john-doe-about.jpg"
               alt="Portrait de John Doe"
-              className="img-fluid mb-3"
+              className="img-fluid mb-3 mt-4"
             />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
@@ -54,7 +54,7 @@ function Home() {
           </div>
           <div className="col-md-6 partie-droite px-4">
             <h2>Mes compétences</h2>
-            <Separator />
+            <Separator variant="home" />
             <div className="competence-bar">
               <div className="competence-item">
                 <label>HTML5 90%</label>
