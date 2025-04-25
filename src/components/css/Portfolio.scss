@@ -1,0 +1,51 @@
+.separator {
+  width: 450px;
+  background-color: #1a72ff;
+  opacity: 1;
+  height: 5px;
+  margin: auto;
+  border: none;
+}
+.portfolio-section {
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .service-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    padding: 1.5rem;
+
+    h3 {
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+      color: #1d4ed8;
+    }
+
+    p {
+      color: #444;
+      line-height: 1.5;
+    }
+
+    &:hover {
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0 0 0;
+}
+h5 {
+  font-weight: 600;
+}
