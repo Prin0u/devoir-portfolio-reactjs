@@ -1,0 +1,34 @@
+.container {
+  margin: 2rem;
+  padding: 20px;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 5px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  font-weight: 600 !important;
+}
+strong {
+  font-size: 25px;
+}
+.container-fluid .separator-contact {
+  width: 100%;
+  height: 3px;
+}
+
+@media (max-width: 768px) {
+  .contact-description .separator-contact {
+    width: 25%;
+  }
+}
+input {
+  margin: 0.5rem 0 0 0;
+  padding: 10px;
+}
+textarea {
+  margin: 0.5rem 0 0 0;
+}
+button {
+  margin: 0.5rem 0 0 0;
+}
