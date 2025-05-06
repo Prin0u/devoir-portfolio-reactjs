@@ -1,10 +1,14 @@
 import React from "react";
 import "../components/css/Services.scss";
 import Separator from "../components/Separator";
+import { Helmet } from "react-helmet";
 
 function Services() {
   return (
     <>
+      <Helmet>
+        <title>Services</title>
+      </Helmet>
       <section>
         <img
           src="/images/banner.jpg"

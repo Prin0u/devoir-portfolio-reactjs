@@ -1,10 +1,14 @@
 import React from "react";
 import "../components/css/Contact.scss";
 import Separator from "../components/Separator";
+import { Helmet } from "react-helmet";
 
 function Contact() {
   return (
     <>
+      <Helmet>
+        <title>Contact</title>
+      </Helmet>
       <section className="contact-description">
         <h1 className="title text-center mt-5">Contact</h1>
         <p className="text-center mb-4">
@@ -13,7 +17,7 @@ function Contact() {
         </p>
         <Separator variant="contact" className="mobile-contact" />
       </section>
-
+      {/* Formulaire à gauche */}
       <section className="contact-section">
         <div className="container">
           <div className="row">
@@ -64,7 +68,7 @@ function Contact() {
               </form>
             </div>
 
-            {/* Coordonnées à droite */}
+            {/* Mes Coordonnées à droite */}
             <div className="container-fluid col-md-6">
               <h2 className="py-2">Mes coordonnées</h2>
               <Separator variant="contact" />

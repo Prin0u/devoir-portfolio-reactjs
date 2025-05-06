@@ -1,0 +1,10 @@
+.separator-legalnotice {
+  width: 40%;
+  height: 5px;
+}
+
+@media (max-width: 768px) {
+  .separator-legalnotice {
+    width: 20%;
+  }
+}

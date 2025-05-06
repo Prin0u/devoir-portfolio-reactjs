@@ -1,96 +1,102 @@
 import React from "react";
 import "../components/css/Home.scss";
 import Separator from "../components/Separator";
+import { Helmet } from "react-helmet";
 
 function Home() {
   return (
-    <div className="homepage">
-      <div className="partie-haute">
-        <div className="contenu-partie-haute">
-          <img
-            src="/images/hero-bg.jpg"
-            alt="Développeur qui écrit un code"
-            className="image-partie-haute"
-          />
-          <div className="titre">
-            <h1>
-              <strong>Bonjour, je suis John Doe</strong> <br />
-              <span className="sous-titre">Développeur web Full Stack</span>
-            </h1>
-            <div className="button-learn-more">
-              <button className="btn btn-danger">En savoir plus</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container-fluid partie-basse py-5">
-        <div className="row contenu-partie-basse">
-          <div className="col-md-6 partie-gauche px-4">
-            <h2>A propos</h2>
-            <Separator variant="home" />
+    <>
+      <Helmet>
+        <title>Home</title>
+      </Helmet>
+      <div className="homepage">
+        <div className="partie-haute">
+          <div className="contenu-partie-haute">
             <img
-              src="/images/john-doe-about.jpg"
-              alt="Portrait de John Doe"
-              className="img-fluid mb-3 mt-1"
+              src="/images/hero-bg.jpg"
+              alt="Développeur qui écrit un code"
+              className="image-partie-haute"
             />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-              necessitatibus consectetur tempore perferendis nostrum, ex
-              delectus reiciendis impedit aut iure enim placeat? Natus, neque
-              at?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-              necessitatibus consectetur tempore perferendis nostrum, ex
-              delectus reiciendis impedit aut iure enim placeat? Natus, neque
-              at?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-              necessitatibus consectetur tempore perferendis nostrum, ex
-              delectus reiciendis impedit aut iure enim placeat? Natus, neque
-              at?
-            </p>
+            <div className="titre">
+              <h1>
+                <strong>Bonjour, je suis John Doe</strong> <br />
+                <span className="sous-titre">Développeur web Full Stack</span>
+              </h1>
+              <div className="button-learn-more">
+                <button className="btn btn-danger">En savoir plus</button>
+              </div>
+            </div>
           </div>
-          <div className="col-md-6 partie-droite px-4">
-            <h2>Mes compétences</h2>
-            <Separator variant="home" />
-            <div className="competence-bar">
-              <div className="competence-item">
-                <label>HTML5 90%</label>
-                <div className="progress-bar">
-                  <div className="filler html"></div>
+        </div>
+        <div className="container-fluid partie-basse py-5">
+          <div className="row contenu-partie-basse">
+            <div className="col-md-6 partie-gauche px-4">
+              <h2>A propos</h2>
+              <Separator variant="home" />
+              <img
+                src="/images/john-doe-about.jpg"
+                alt="Portrait de John Doe"
+                className="img-fluid mb-3 mt-1"
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                necessitatibus consectetur tempore perferendis nostrum, ex
+                delectus reiciendis impedit aut iure enim placeat? Natus, neque
+                at?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                necessitatibus consectetur tempore perferendis nostrum, ex
+                delectus reiciendis impedit aut iure enim placeat? Natus, neque
+                at?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                necessitatibus consectetur tempore perferendis nostrum, ex
+                delectus reiciendis impedit aut iure enim placeat? Natus, neque
+                at?
+              </p>
+            </div>
+            <div className="col-md-6 partie-droite px-4">
+              <h2>Mes compétences</h2>
+              <Separator variant="home" />
+              <div className="competence-bar">
+                <div className="competence-item">
+                  <label>HTML5 90%</label>
+                  <div className="progress-bar">
+                    <div className="filler html"></div>
+                  </div>
                 </div>
-              </div>
-              <div className="competence-item">
-                <label>CSS3 80%</label>
-                <div className="progress-bar">
-                  <div className="filler css"></div>
+                <div className="competence-item">
+                  <label>CSS3 80%</label>
+                  <div className="progress-bar">
+                    <div className="filler css"></div>
+                  </div>
                 </div>
-              </div>
-              <div className="competence-item">
-                <label>JAVASCRIPT 70%</label>
-                <div className="progress-bar">
-                  <div className="filler js"></div>
+                <div className="competence-item">
+                  <label>JAVASCRIPT 70%</label>
+                  <div className="progress-bar">
+                    <div className="filler js"></div>
+                  </div>
                 </div>
-              </div>
-              <div className="competence-item">
-                <label>PHP 60%</label>
-                <div className="progress-bar">
-                  <div className="filler php"></div>
+                <div className="competence-item">
+                  <label>PHP 60%</label>
+                  <div className="progress-bar">
+                    <div className="filler php"></div>
+                  </div>
                 </div>
-              </div>
-              <div className="competence-item">
-                <label>REACT 50%</label>
-                <div className="progress-bar">
-                  <div className="filler react"></div>
+                <div className="competence-item">
+                  <label>REACT 50%</label>
+                  <div className="progress-bar">
+                    <div className="filler react"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

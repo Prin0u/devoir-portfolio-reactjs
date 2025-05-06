@@ -1,6 +1,7 @@
 import React from "react";
 import "../components/css/Portfolio.scss";
 import Separator from "../components/Separator";
+import { Helmet } from "react-helmet";
 
 function Portfolio() {
   const realisations = [
@@ -42,69 +43,78 @@ function Portfolio() {
     },
   ];
   return (
-    <section className="portfolio-section">
-      <img
-        src="/images/banner.jpg"
-        alt="Bannière bleue"
-        className="img-fluid"
-      />
-      <div className="portfolio-container">
-        <h1 className="title text-center mt-2">Portfolio</h1>
-        <p className="text-center mb-4">
-          Voici quelques-unes de mes réalisations
-        </p>
-        <Separator variant="services" />
+    <>
+      <Helmet>
+        <title>Portfolio</title>
+      </Helmet>
+      <section className="portfolio-section">
+        <img
+          src="/images/banner.jpg"
+          alt="Bannière bleue"
+          className="img-fluid"
+        />
+        <div className="portfolio-container">
+          <h1 className="title text-center mt-2">Portfolio</h1>
+          <p className="text-center mb-4">
+            Voici quelques-unes de mes réalisations
+          </p>
+          <Separator variant="services" />
 
-        <div className="row mt-5">
-          {realisations.slice(0, 3).map((service, index) => (
-            <div key={index} className="col-md-4 mb-4">
-              <div className="card h-100 shadow-sm">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="card-img-top"
-                  style={{ objectFit: "cover", height: "180px" }}
-                />
-                <div className="card-body">
-                  <h5 className="card-title text-center">{service.title}</h5>
-                  <p className="card-text text-center">{service.description}</p>
-                  <div className="mt-auto text-center">
-                    <button className="btn btn-primary">Voir le site</button>
+          <div className="row mt-5">
+            {realisations.slice(0, 3).map((service, index) => (
+              <div key={index} className="col-md-4 mb-4">
+                <div className="card h-100 shadow-sm">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="card-img-top"
+                    style={{ objectFit: "cover", height: "180px" }}
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title text-center">{service.title}</h5>
+                    <p className="card-text text-center">
+                      {service.description}
+                    </p>
+                    <div className="mt-auto text-center">
+                      <button className="btn btn-primary">Voir le site</button>
+                    </div>
+                    <footer className="card-footer text-center mt-3">
+                      <small>{service.tool}</small>
+                    </footer>
                   </div>
-                  <footer className="card-footer text-center mt-3">
-                    <small>{service.tool}</small>
-                  </footer>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-        <div className="row">
-          {realisations.slice(3, 6).map((service, index) => (
-            <div key={index} className="col-md-4 mb-4">
-              <div className="card h-100 shadow-sm">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="card-img-top"
-                  style={{ objectFit: "cover", height: "180px" }}
-                />
-                <div className="card-body">
-                  <h5 className="card-title text-center">{service.title}</h5>
-                  <p className="card-text text-center">{service.description}</p>
-                  <div className="mt-auto text-center">
-                    <button className="btn btn-primary">Voir le site</button>
+            ))}
+          </div>
+          <div className="row">
+            {realisations.slice(3, 6).map((service, index) => (
+              <div key={index} className="col-md-4 mb-4">
+                <div className="card h-100 shadow-sm">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="card-img-top"
+                    style={{ objectFit: "cover", height: "180px" }}
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title text-center">{service.title}</h5>
+                    <p className="card-text text-center">
+                      {service.description}
+                    </p>
+                    <div className="mt-auto text-center">
+                      <button className="btn btn-primary">Voir le site</button>
+                    </div>
+                    <footer className="card-footer text-center mt-3">
+                      <small>{service.tool}</small>{" "}
+                    </footer>
                   </div>
-                  <footer className="card-footer text-center mt-3">
-                    <small>{service.tool}</small>{" "}
-                  </footer>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 export default Portfolio;
