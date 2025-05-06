@@ -31,7 +31,7 @@ function Home() {
             <img
               src="/images/john-doe-about.jpg"
               alt="Portrait de John Doe"
-              className="img-fluid mb-3 mt-4"
+              className="img-fluid mb-3 mt-1"
             />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
