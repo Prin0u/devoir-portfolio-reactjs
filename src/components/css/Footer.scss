@@ -1,6 +1,14 @@
-a {
-  text-decoration: none;
-}
-i {
-  color: #4b4b4b !important;
+.footer {
+  a {
+    text-decoration: none;
+    &:hover {
+      font-weight: bold !important;
+    }
+  }
+  i {
+    color: #4b4b4b !important;
+    &:hover {
+      color: white !important;
+    }
+  }
 }

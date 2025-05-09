@@ -7,7 +7,7 @@ import Modale from "../components/Modale";
 function Home() {
   const [showModale, setShowModale] = useState(false);
   return (
-    <>
+    <div className="home">
       <Helmet>
         <title>Home</title>
       </Helmet>
@@ -20,10 +20,8 @@ function Home() {
               className="image-partie-haute"
             />
             <div className="titre">
-              <h1>
-                <strong>Bonjour, je suis John Doe</strong> <br />
-                <h2 className="mt-1">Développeur web Full Stack</h2>
-              </h1>
+              <h1>Bonjour, je suis John Doe</h1>
+              <h2 className="mt-1">Développeur web Full Stack</h2>
               <div className="button-learn-more">
                 <button
                   className="btn btn-danger"
@@ -35,7 +33,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="container-fluid partie-basse py-5">
+        <div className="container-fluid partie-basse mx-auto py-5">
           <div className="row contenu-partie-basse">
             <div className="col-md-6 partie-gauche px-4">
               <h2>A propos</h2>
@@ -104,7 +102,7 @@ function Home() {
         </div>
         <Modale show={showModale} handleClose={() => setShowModale(false)} />
       </div>
-    </>
+    </div>
   );
 }
 

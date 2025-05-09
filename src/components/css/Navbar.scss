@@ -22,11 +22,8 @@
   text-decoration: underline;
   font-weight: bold;
 }
-.navbar-nav .nav-link:active {
-  text-decoration: underline;
-  font-weight: bold;
-}
+
 .navbar-nav .nav-link.active {
   text-decoration: underline;
-  font-weight: bold;
+  font-weight: 700 !important;
 }
