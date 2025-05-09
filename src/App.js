@@ -1,14 +1,17 @@
 import React from "react";
+import "./components/css/Global.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Contact from "./pages/Contact";
 import Legalnotice from "./pages/Legalnotice";
-import Modale from "./pages/Modale";
+import Modale from "./components/Modale";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
