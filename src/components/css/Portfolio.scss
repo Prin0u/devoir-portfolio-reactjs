@@ -1,51 +1,91 @@
-.separator {
-  width: 450px;
-  background-color: #1a72ff;
-  opacity: 1;
-  height: 5px;
-  margin: auto;
-  border: none;
-}
-.portfolio-section {
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+.portfolio {
+  .separator {
+    width: 450px;
+    background-color: #1a72ff;
+    opacity: 1;
+    height: 5px;
+    margin: auto;
+    border: none;
+    @media (max-width: 768px) {
+      margin: auto;
+      width: 20%;
+    }
   }
+  .portfolio-section {
+    .service-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 1rem;
+      padding: 1.5rem;
 
-  .service-card {
-    background: white;
+      h3 {
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+        color: #1d4ed8;
+      }
+
+      p {
+        color: #444;
+        line-height: 1.5;
+      }
+
+      &:hover {
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  .portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
     border: 1px solid #ddd;
-    border-radius: 1rem;
-    padding: 1.5rem;
-
-    h3 {
-      margin-bottom: 1rem;
-      font-size: 1.25rem;
-      color: #1d4ed8;
-    }
-
-    p {
-      color: #444;
-      line-height: 1.5;
-    }
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
 
     &:hover {
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      box-shadow: 5px rgba(0, 0, 0, 0.1);
+      background-color: #efefef;
+    }
+
+    .card-img-top {
+      object-fit: cover;
+      height: 180px;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+
+    .card-title {
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .card-text {
+      margin-bottom: 1rem;
+
+      text-align: center;
+    }
+    .btn-primary {
+      &:hover {
+        background-color: lighten(#1a72ff, 10%);
+      }
+    }
+    .card-footer {
+      padding: 0.5rem 0.5rem;
+      color: #555;
+      text-align: center;
     }
   }
-}
-.portfolio-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem 0 0 0;
-}
-h5 {
-  font-weight: 600;
 }

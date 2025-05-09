@@ -40,10 +40,11 @@ function Portfolio() {
       description: "Création du prototype d'un site",
       image: "/images/portfolio/screens.jpg",
       tool: "Réalisé avec FIGMA",
+      link: "https://www.figma.com/design/wtL4DNIkFHPNzWWq7nFhUW/devoir-figma?node-id=0-1&p=f&t=o13Pq97JWaQsOXyc-0",
     },
   ];
   return (
-    <>
+    <div className="portfolio">
       <Helmet>
         <title>Portfolio</title>
       </Helmet>
@@ -78,10 +79,11 @@ function Portfolio() {
                     <div className="mt-auto text-center">
                       <button className="btn btn-primary">Voir le site</button>
                     </div>
-                    <footer className="card-footer text-center mt-3">
-                      <small>{service.tool}</small>
-                    </footer>
                   </div>
+
+                  <footer className="card-footer text-center">
+                    <small>{service.tool}</small>
+                  </footer>
                 </div>
               </div>
             ))}
@@ -102,19 +104,26 @@ function Portfolio() {
                       {service.description}
                     </p>
                     <div className="mt-auto text-center">
-                      <button className="btn btn-primary">Voir le site</button>
+                      <a
+                        href={service.link}
+                        className="btn btn-primary"
+                        target="_blank"
+                        rel=" noreferrer"
+                      >
+                        Voir le site
+                      </a>
                     </div>
-                    <footer className="card-footer text-center mt-3">
-                      <small>{service.tool}</small>{" "}
-                    </footer>
                   </div>
+                  <footer className="card-footer text-center">
+                    <small>{service.tool}</small>{" "}
+                  </footer>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 export default Portfolio;

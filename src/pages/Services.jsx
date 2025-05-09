@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 
 function Services() {
   return (
-    <>
+    <div className="services">
       <Helmet>
         <title>Services</title>
       </Helmet>
@@ -23,48 +23,56 @@ function Services() {
       </section>
 
       <section>
-        <div className="row mx-auto mt-2 g-3">
-          <div className=" col-md-4 px-2">
-            <div className="services service-box text-center">
-              <i className="bi bi-brush"></i>
-              <h3 className="title">UX Design</h3>
-              <p>
-                L'UX Design est une discipline qui consiste à concevoir des
-                produits (site web, applications mobiles, logiciels, objets
-                connectés, etc.) en plaçant l'utilisateur au centre des
-                préoccupations. L'objectif est de rendre l'expérience
-                utilisateur la plus fluide et agréable possible.
-              </p>
+        <div className="row mx-auto my-5">
+          <div className="col-md-4 mb-2 px-2">
+            <div className="card h-100 service-box d-flex flex-column">
+              <div className="card-body">
+                <i className="bi bi-brush fs-1"></i>
+                <h3 className="card-title">UX Design</h3>
+                <p className="card-text text-center">
+                  L'UX Design est une discipline qui consiste à concevoir des
+                  produits (site web, applications mobiles, logiciels, objets
+                  connectés, etc.) en plaçant l'utilisateur au centre des
+                  préoccupations. L'objectif est de rendre l'expérience
+                  utilisateur la plus fluide et agréable possible.
+                </p>
+              </div>
             </div>
           </div>
-          <div className=" col-md-4 px-2">
-            <div className="services service-box text-center">
-              <i className="bi bi-code-slash"></i>
 
-              <h3 className="title">Développement web</h3>
-              <p>
-                Le développement de sites web consiste à créer des sites
-                internet en utilisant des langages de programmation (HTML, CSS,
-                JavaScript, PHP, etc.) et des frameworks (Bootstrap, React,
-                Angular, etc.).
-              </p>
+          <div className="col-md-4 mb-2 px-2">
+            <div className="card h-100 service-box text-center">
+              <div className="card-body">
+                <i className="bi bi-code-slash fs-1"></i>
+                <h3 className="card-title">Développement web</h3>
+                <p className="card-text text-center">
+                  Le développement de sites web consiste à créer des sites
+                  internet en utilisant des langages de programmation (HTML,
+                  CSS, JavaScript, PHP, etc.) et des frameworks (Bootstrap,
+                  React, Angular, etc.).
+                </p>
+              </div>
             </div>
           </div>
-          <div className=" col-md-4 px-2">
-            <div className="services service-box text-center">
-              <i className="bi bi-search" />
-              <h3 className="title">Référencement</h3>
-              <p>
-                Le référencement naturel (SEO) est une technique qui consiste à
-                optimiser un site web pour le remonter dans les résultats des
-                moteurs de recherche (Google, Bing, Yahoo, etc.). L'objectif est
-                d'attirer un maximum de visiteurs qualifiés sur le site.
-              </p>
+
+          <div className="col-md-4 mb-2 px-2">
+            <div className="card h-100 service-box">
+              <div className="card-body">
+                <i className="bi bi-search fs-1"></i>
+                <h3 className="card-title">Référencement</h3>
+                <p className="card-text text-center">
+                  Le référencement naturel (SEO) est une technique qui consiste
+                  à optimiser un site web pour le remonter dans les résultats
+                  des moteurs de recherche (Google, Bing, Yahoo, etc.).
+                  L'objectif est d'attirer un maximum de visiteurs qualifiés sur
+                  le site.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

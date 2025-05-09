@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 
 function Contact() {
   return (
-    <>
+    <div className="contact">
       <Helmet>
         <title>Contact</title>
       </Helmet>
@@ -100,7 +100,7 @@ function Contact() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 
