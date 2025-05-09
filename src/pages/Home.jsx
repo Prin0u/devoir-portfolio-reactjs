@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "../components/css/Home.scss";
 import Separator from "../components/Separator";
 import { Helmet } from "react-helmet";
+import Modale from "../components/Modale";
 
 function Home() {
+  const [showModale, setShowModale] = useState(false);
   return (
     <>
       <Helmet>
@@ -20,10 +22,15 @@ function Home() {
             <div className="titre">
               <h1>
                 <strong>Bonjour, je suis John Doe</strong> <br />
-                <span className="sous-titre">Développeur web Full Stack</span>
+                <h2 className="mt-1">Développeur web Full Stack</h2>
               </h1>
               <div className="button-learn-more">
-                <button className="btn btn-danger">En savoir plus</button>
+                <button
+                  className="btn btn-danger"
+                  onClick={() => setShowModale(true)}
+                >
+                  En savoir plus
+                </button>
               </div>
             </div>
           </div>
@@ -95,6 +102,7 @@ function Home() {
             </div>
           </div>
         </div>
+        <Modale show={showModale} handleClose={() => setShowModale(false)} />
       </div>
     </>
   );

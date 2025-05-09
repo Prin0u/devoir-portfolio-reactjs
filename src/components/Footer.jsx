@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-dark text-white py-4 mt-auto flex-grow-1">
-      <div className="container">
-        <div className="row justify-content-center text-md-start text-center">
+    <footer className="bg-dark text-white py-2 mt-auto">
+      <div className="container mx-auto">
+        <div className="row d-flex justify-content-center flex-grow-1">
           <div className="col-12 col-md-4 mb-4 mb-md-0">
             <h5>John Doe</h5>
             <address>

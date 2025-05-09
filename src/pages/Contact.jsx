@@ -18,8 +18,8 @@ function Contact() {
         <Separator variant="contact" className="mobile-contact" />
       </section>
       {/* Formulaire à gauche */}
-      <section className="contact-section">
-        <div className="container">
+      <section className="contact-section d-flex justify-content-center">
+        <div className="container ">
           <div className="row">
             <div className="container-fluid col-md-6 px-4">
               <h2 className="py-2">Formulaire de contact</h2>

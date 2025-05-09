@@ -10,9 +10,10 @@ function Legalnotice() {
         <meta name="robots" content="noindex, nofollow" />
         <title>Mentions légales</title>
       </Helmet>
-      <section className="container my-5">
-        <h2 className="mb-4 text-center">Mentions légales</h2>
-        <Separator variant="legalnotice" />
+
+      <h2 className="mb-4 mt-5 text-center">Mentions légales</h2>
+      <Separator variant="legalnotice" />
+      <div className="container accordion-wrapper mt-0 mb-5 mx-auto">
         <div className="accordion" id="accordionMentionsLegales">
           {/* Partie 1 : Éditeur du site */}
           <div className="accordion-item mt-5">
@@ -149,7 +150,7 @@ function Legalnotice() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 }
