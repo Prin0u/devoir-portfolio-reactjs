@@ -64,7 +64,7 @@ function Portfolio() {
           <div className="row mt-5">
             {realisations.slice(0, 3).map((service, index) => (
               <div key={index} className="col-md-4 mb-4">
-                <div className="card h-100 shadow-sm">
+                <div className="card shadow-sm">
                   <img
                     src={service.image}
                     alt={service.title}
@@ -91,7 +91,7 @@ function Portfolio() {
           <div className="row">
             {realisations.slice(3, 6).map((service, index) => (
               <div key={index} className="col-md-4 mb-4">
-                <div className="card h-100 shadow-sm">
+                <div className="card shadow-sm">
                   <img
                     src={service.image}
                     alt={service.title}

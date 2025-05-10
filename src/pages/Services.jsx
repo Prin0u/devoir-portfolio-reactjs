@@ -25,7 +25,7 @@ function Services() {
       <section>
         <div className="row mx-auto my-5">
           <div className="col-md-4 mb-2 px-2">
-            <div className="card h-100 service-box d-flex flex-column">
+            <div className="card shadow-sm">
               <div className="card-body">
                 <i className="bi bi-brush fs-1"></i>
                 <h3 className="card-title">UX Design</h3>
@@ -41,7 +41,7 @@ function Services() {
           </div>
 
           <div className="col-md-4 mb-2 px-2">
-            <div className="card h-100 service-box text-center">
+            <div className="card shadow-sm">
               <div className="card-body">
                 <i className="bi bi-code-slash fs-1"></i>
                 <h3 className="card-title">Développement web</h3>
@@ -56,7 +56,7 @@ function Services() {
           </div>
 
           <div className="col-md-4 mb-2 px-2">
-            <div className="card h-100 service-box">
+            <div className="card shadow-sm">
               <div className="card-body">
                 <i className="bi bi-search fs-1"></i>
                 <h3 className="card-title">Référencement</h3>

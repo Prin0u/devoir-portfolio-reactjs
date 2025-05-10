@@ -11,10 +11,10 @@ const Modale = ({ show, handleClose }) => {
       name: "John Doe",
       location: "Lyon, France",
       bio: "As we all know, John Doe's identity is unknown. I just wanted to contribute without being known.",
-      repositories: 1,
-      followers: 15,
+      repositories: 4,
+      followers: 0,
       following: 0,
-      github: "https://github.com/github-john-doe",
+      github: "https://github.com/Prin0u",
       image: "/images/johndoe.png",
     };
 
@@ -51,7 +51,7 @@ const Modale = ({ show, handleClose }) => {
               <p className="my-2">
                 <i class="bi bi-person"> </i>
                 <a
-                  href="https://github.com/github-john-doe"
+                  href="https://github.com/Prin0u"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -74,14 +74,14 @@ const Modale = ({ show, handleClose }) => {
               <p className="my-2">
                 {" "}
                 <i class="bi bi-box"> </i>
-                Repositories : 1
+                Repositories : 4
               </p>
             </div>{" "}
             <div className="border-bottom border-secondary">
               <p className="my-2">
                 {" "}
                 <i class="bi bi-people"> </i>
-                Followers : 15
+                Followers : 0
               </p>
             </div>{" "}
             <div>
