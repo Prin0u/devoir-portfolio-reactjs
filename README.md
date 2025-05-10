@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,7 +69,45 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
+# This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # devoir-portfolio-reactjs
->>>>>>> 53b59a550e0932c43142247ee5773985ee8bfb72
+
+# FRANCAIS
+
+# Portfolio React
+
+Ceci est le portflio de John Doe développé en **React.js**. Il présente ses compétences, ses réalisations et fournit des informations sur ses projets passés.
+
+## Prérequis
+
+Avant de lancer le projet, assurez-vous d'avoir installé les outils suivants sur votre machine :
+
+- **Node.js** (https://nodejs.org/)
+- **npm** (inclut avec Node.js)
+
+## Installation
+
+1. Clonez ce projet dans votre répertoire local :
+   ```bash
+   git clone https://github.com/Prin0u/devoir-portfolio-reactjs.git
+   =========================
+   ```
+
+# ENGLISH
+
+This is John Doe's portfolio developed with **React.js**. It showcases his skills, projects, and provides information about his past work.
+
+Before running the project, make sure you have the following tools installed on your machine:
+
+- **Node.js** (https://nodejs.org/)
+- **npm** (inclut avec Node.js)
+
+## Installation
+
+1. Clone this project to your local directory:
+
+   ```bash
+   git clone https://github.com/Prin0u/devoir-portfolio-reactjs.git
+   >>>>>>> 53b59a550e0932c43142247ee5773985ee8bfb72
+   ```

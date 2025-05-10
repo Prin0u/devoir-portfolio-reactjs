@@ -17,7 +17,7 @@ function Home() {
         <meta name="robots" content="index, follow" />
         <meta
           property="og:title"
-          content="John Doe | Développeur Web Full Stack"
+          content="John Doe Développeur Web Full Stack"
         />
         <meta
           property="og:description"
